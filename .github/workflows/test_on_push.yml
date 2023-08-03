@@ -20,7 +20,7 @@ jobs:
       - name: print success message
         run: echo 'Success! all the tests passed, the deployement could be done'
       - name: publish steps
-        run: amplify publish --y
+        run: amplify push --y
       - name: is publiched success
         run: echo "version published successly ! :rocket:"
 
