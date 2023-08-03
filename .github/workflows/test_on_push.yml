@@ -10,13 +10,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: set up npm
-        uses: actions/setup-node@v1
+        uses: action/setup-node@v1
         with:
           node-version: '18.x'
       - name: install dependecies
         run: npm install
       - name: run tests
         run: npm run test
+      - name: print success message
+        run: echo 'Success! all the tests passed, the deployement could be done'
 
 
 
