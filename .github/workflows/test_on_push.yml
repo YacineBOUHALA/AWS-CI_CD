@@ -21,11 +21,11 @@ jobs:
         run: echo 'Success! all the tests passed, the deployement could be done'
       - name: Install amplify
         run: npm install -g @aws-amplify/cli 
+      - name: publish steps
+        run: amplify push --yes
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
-      - name: publish steps
-        run: amplify push --yes
       - name: is publiched success
         run: echo "version published successly ! :rocket:"
 
