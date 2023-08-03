@@ -10,6 +10,14 @@
       "StackName": "amplify-awscicdautomatiquede-dev-103221",
       "StackId": "arn:aws:cloudformation:us-east-1:939776014398:stack/amplify-awscicdautomatiquede-dev-103221/46b41cd0-31d8-11ee-83fd-0e5cf6657d69",
       "AmplifyAppId": "dhovdcm2fsbj"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dhovdcm2fsbj",
+          "type": "cicd"
+        }
+      }
     }
   }
 }
