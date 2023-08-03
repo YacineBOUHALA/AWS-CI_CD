@@ -1,0 +1,23 @@
+name: "check piplines"
+
+on: 
+  push:
+      branches:
+          - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v2
+      - name: set up npm
+        uses: action/setup-node@v1
+        with:
+          node-version: '18.x'
+      - name: install dependecies
+        run: npm install
+      - name: run tests
+        run: npm run test
+
+
+
+
