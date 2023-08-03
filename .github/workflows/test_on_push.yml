@@ -3,7 +3,7 @@ name: "check piplines"
 on: 
   push:
       branches:
-          - cicd
+          - main
 jobs:
   test:
     runs-on: ubuntu-latest
