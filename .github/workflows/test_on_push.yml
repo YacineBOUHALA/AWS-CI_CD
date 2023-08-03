@@ -20,7 +20,7 @@ jobs:
       - name: print success message
         run: echo 'Success! all the tests passed, the deployement could be done'
       - name: Install amplify
-        run: npm install @aws-amplify/cli 
+        run: npm install -g @aws-amplify/cli 
       - name: publish steps
         run: amplify push --yes
       - name: is publiched success
