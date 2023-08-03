@@ -28,4 +28,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
       - name: is publiched success
-        run: echo "version published successfuly ! U+1F680"
+        run: echo "version published successfuly ! \U+1F680"
